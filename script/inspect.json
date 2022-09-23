@@ -1,0 +1,9 @@
+---
+---
+
+{{ site | jsonify }}
+
+{%- for p in site.html_pages -%}
+{{ p | jsonify }}
+
+{%- endfor -%}
